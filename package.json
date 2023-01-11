@@ -1,0 +1,26 @@
+{
+  "name": "online-compiler",
+  "version": "1.0.0",
+  "description": " an online IDE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sakilmostak/Online-Compiler-FullStack.git"
+  },
+  "author": "Sakil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sakilmostak/Online-Compiler-FullStack/issues"
+  },
+  "homepage": "https://github.com/Sakilmostak/Online-Compiler-FullStack#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compilex": "^0.7.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  }
+}

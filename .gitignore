@@ -1,0 +1,8 @@
+node_modules
+*.cpp
+*.py
+*.java
+*.txt
+*.exe
+*.out
+*.vb

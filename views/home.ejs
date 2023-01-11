@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Online Compiler</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, 
+        initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/download.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div id="full">
+    <header>
+        <h2 id="title">Online Compiler</h2>
+    </header>
+    <div class="ide">
+        <form action="/compile" method="POST">
+            <div class="langs">
+
+                <input type="radio" id="btn2" name="language" value="C" class="radio_item" checked="checked" >
+                <label class="label_item" for="btn2"><img
+                        src="https://pngimg.com/uploads/letter_c/letter_c_PNG50.png"></label>
+
+                <input type="radio" id="btn3" name="language" value="Python" class="radio_item">
+                <label class="label_item" for="btn3"><img
+                        src="https://image.pngaaa.com/138/619138-middle.png"></label>
+
+                <input type="radio" name="language" id="btn1" class="radio_item" value="JAVA" />
+                <label class="label_item" for="btn1"><img
+                        src="https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png"></label>
+
+            </div>
+            <div id="split">
+                <div id="names">
+                    <div class="cat"><b><u>Code</u></b></div><hr>
+                    <div class="cat"><b><u>Input</u></b></div>
+                </div>
+                <div id="coding">
+                    <textarea name="code" class="input"><% if(locals.code!==null) { %> <%= locals.code %> <%}%></textarea>
+                    <div class="io">
+                      <div class="output">
+                        <textarea name="inputData" class="value"><% if(locals.input!==null) { %> <%= locals.input %> <%}%></textarea>
+                        <p id="ans">Output: <br><% if(locals.output!==null) { %> <%= locals.output %> <%}%></p>
+                      </div>
+                        <div id="btns">
+                            <h3 id="inh"><u>Input: </u></h3>
+                            <input type="radio" name="inputCheck" value="true" id="btn4" class="" checked="checked" />
+                            <label for="btn4">Yes</label>
+                            <input type="radio" name="inputCheck" value="false" id="btn5" class="">
+                            <label for="btn5">No</label><br>
+                            <button name="subject" type="submit" id="run"><img id="play"
+                                    src="https://www.pngfind.com/pngs/m/138-1388877_play-icon-free-wallpaper-vector-button-play-button.png">Run</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <h2>Online Compiler</h2>
+        <div class="social-media">
+            <p class="fa fa-instagram"></p>
+            <a class="footer-link" href="https://www.instagram.com/">Instagram</a>
+            <p class="fa fa-twitter"></p>
+            <a class="footer-link" href="https://twitter.com/">Twitter</a>
+            <p class="fa fa-facebook"></p>
+            <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
+        </div>
+        <p>Copyright © 2022 All Rights Reserved to Tarun, Pratik, Roshan, Shakil.</p>
+    </footer>
+    <script type="text/javascript" src="/js/home.js"></script>
+
+    </div>
+</body>
+
+</html>
